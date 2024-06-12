@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// eslint-disable-next-line
 import { motion } from "framer-motion";
 import AppWrap from "../../Wrapper/AppWrap";
 import { AiOutlineCaretRight, AiOutlineCaretLeft } from "react-icons/ai";

@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './About.scss';
 import {motion } from 'framer-motion';
+// eslint-disable-next-line
 import {images} from '../../constants';
 import { client, urlFor } from '../../Client';
 import AppWrap from '../../Wrapper/AppWrap';

@@ -5,6 +5,7 @@ const NavigationDots = ({ active }) => {
     <div className="app__navigation">
       {["home", "about", "work", "skills", "Certifications", "testimonials", "contact"].map(
         (item, index) => (
+          // eslint-disable-next-line
           <a href={`#${item}`}
             key = {index + item}
             className="app__navigation-dot"

@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./Certifications.scss";
 import Carousel from "react-elastic-carousel";
 import AppWrap from "../../Wrapper/AppWrap";
+// eslint-disable-next-line
 import MotionWrap from "../../Wrapper/MotionWrap";
 import { motion } from "framer-motion";
 // import {images} from '../../constants';
+// eslint-disable-next-line
 import { AiFillGithub, AiFillEye } from "react-icons/ai";
 import { urlFor, client } from "../../Client";
 
