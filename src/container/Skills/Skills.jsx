@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+// eslint-disable-next-line
 import {AiFillEye, AiFillGithub} from 'react-icons/ai';
+// eslint-disable-next-line
 import ReactTooltip from 'react-tooltip'
 import  AppWrap  from "../../Wrapper/AppWrap";
 import  MotionWrap  from "../../Wrapper/MotionWrap";
 import { urlFor, client } from "../../Client";
 import './Skills.scss';
+// eslint-disable-next-line
 import { ClientError } from "@sanity/client";
 import Marquee from "react-fast-marquee";
 
@@ -13,6 +16,7 @@ import Marquee from "react-fast-marquee";
 
 const Skills = () => {
 
+  // eslint-disable-next-line
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
 

@@ -40,6 +40,7 @@ import spotify from '../assets/spotify.png';
 import netcore from '../assets/netcore.png';
 import csharp from '../assets/csharp.png';
 
+// eslint-disable-next-line
 export default {
     jayant,
     reactpng,

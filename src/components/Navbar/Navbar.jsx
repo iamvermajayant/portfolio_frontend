@@ -16,6 +16,7 @@ const Navbar = () => {
         {["home", "about", "work", "contact", "skills", "Blogs"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             {item === "Blogs" ? (
+              // eslint-disable-next-line
                       <a href="https://jayantverma.hashnode.dev/" target="_blank">
                         {item}
                       </a>
@@ -42,6 +43,7 @@ const Navbar = () => {
                 (item) => (
                   <li key={item}>
                     {item === "Blogs" ? (
+                      // eslint-disable-next-line
                       <a href="https://jayantverma.hashnode.dev/" target="_blank">
                         {item}
                       </a>
