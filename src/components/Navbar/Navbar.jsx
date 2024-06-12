@@ -13,9 +13,17 @@ const Navbar = () => {
         <img src={images.jayant} alt="logo" width="240" height="60" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work", "contact", "skills"].map((item) => (
+        {["home", "about", "work", "contact", "skills", "Blogs"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
-            <a href={`#${item}`}>{item}</a>
+            {item === "Blogs" ? (
+                      <a href="https://jayantverma.hashnode.dev/" target="_blank">
+                        {item}
+                      </a>
+                    ) : (
+                      <a href={`#${item}`} onClick={() => setToggle(false)}>
+                        {item}
+                      </a>
+                    )}
             <div />
           </li>
         ))}
@@ -30,11 +38,21 @@ const Navbar = () => {
             {/* <HiXCircle onClick={() => setToggle(false)} /> */}
             <HiXCircle onClick={() => setToggle(false)} />
             <ul>
-            {["home", "about", "work", "contact", "skills"].map((item) => (
-              <li key={item}>
-                <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
-              </li>
-            ))}
+              {["home", "about", "work", "contact", "skills", "Blogs"].map(
+                (item) => (
+                  <li key={item}>
+                    {item === "Blogs" ? (
+                      <a href="https://jayantverma.hashnode.dev/" target="_blank">
+                        {item}
+                      </a>
+                    ) : (
+                      <a href={`#${item}`} onClick={() => setToggle(false)}>
+                        {item}
+                      </a>
+                    )}
+                  </li>
+                )
+              )}
             </ul>
           </motion.div>
         )}

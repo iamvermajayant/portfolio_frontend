@@ -7,6 +7,7 @@ import  MotionWrap  from "../../Wrapper/MotionWrap";
 import { urlFor, client } from "../../Client";
 import './Skills.scss';
 import { ClientError } from "@sanity/client";
+import Marquee from "react-fast-marquee";
 
 
 
@@ -29,6 +30,7 @@ const Skills = () => {
   return (
     <div>
       <h2 className="head-text" style={{marginTop : '1rem'}}>Skills</h2>
+      <Marquee>
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
           {skills.map((skill)=>(
@@ -48,6 +50,7 @@ const Skills = () => {
           ))}
         </motion.div>
       </div>
+      </Marquee>
     </div>
   )
 }
