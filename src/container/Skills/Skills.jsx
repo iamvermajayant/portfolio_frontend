@@ -29,7 +29,7 @@ const Skills = () => {
       client.fetch(query).then((data) =>{
         setExperiences(data);
       })
-  })
+  },[])
 
   return (
     <div>
