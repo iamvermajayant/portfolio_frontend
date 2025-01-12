@@ -162,7 +162,9 @@ const RainbowCursor = ({
       targetElement.removeEventListener('mousemove', onMouseMove);
       window.removeEventListener('resize', onWindowResize);
     };
-  }, [
+  }, 
+  // eslint-disable-next-line
+  [
     element,
     length,
     colors,

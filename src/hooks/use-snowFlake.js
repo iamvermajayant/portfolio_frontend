@@ -105,6 +105,7 @@ const SnowflakeCursor = ({ element }) => {
     };
     init();
     return () => destroy();
+    // eslint-disable-next-line
   }, [element]);
   return null;
 };

@@ -11,6 +11,7 @@ const rippleReducer = (state, action) => {
 };
 const RippleCursor = ({ maxSize = 50, duration = 1000, blur = true }) => {
   const [ripples, dispatch] = useReducer(rippleReducer, []);
+  // eslint-disable-next-line
   const handleMouseMove = (e) => {
     const ripple = {
       id: `${Date.now()}-${Math.random()}`,
