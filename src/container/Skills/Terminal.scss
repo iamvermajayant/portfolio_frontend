@@ -1,0 +1,54 @@
+.terminal {
+    background-color: #054A91;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .terminal__header {
+    background-color: #E6E6E6;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .terminal__buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .terminal__button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .terminal__button--close {
+    background-color: #FF5F56;
+  }
+  
+  .terminal__button--minimize {
+    background-color: #FFBD2E;
+  }
+  
+  .terminal__button--maximize {
+    background-color: #27C93F;
+  }
+  
+  .terminal__body {
+    color: #FFFFFF;
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+  }
+  
+  .terminal__prompt {
+    color: #27C93F;
+    margin-right: 8px;
+  }
+  
+  
